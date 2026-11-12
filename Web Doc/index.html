@@ -6,6 +6,112 @@
     <link rel="stylesheet" href="css/gobal.css">
 </head>
 <body>
-    Hello World
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-link">
+                <i data-lucide="code-xml"></i>
+                <a href="">Web Docs</a>
+            </div>
+            <ul class="man-nav">
+                <li>
+                    <i data-lucide="house"></i>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <i data-lucide="book"></i>
+                    <a href="index.html">Conteúdo</a>
+                </li>
+                <li>
+                    <i data-lucide="user"></i>
+                    <a href="index.html">Sobre o Autor</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Web Docs</h1>
+                <h2>
+                    Internet, Web, <br>
+                    <span>HTML</span> e <span>CSS</span>
+                </h2>
+                <p>
+                    Material didático com conceitos, exemplos e <br>
+                    e atividades sobre Internet, Web, HTML e CSS.
+                </p>
+            </div>
+
+            <div class="banner-buttons">
+                <a href="#">
+                    <i data-lucide="book"></i>
+                    <span>Explorar Conteúdos</span>
+                </a>
+                <a href="#">
+                    <i data-lucide="code-xml"></i>
+                    <span>Exemplos</span>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="courses">
+            <h2>Área de Conteúdo</h2>
+            
+            <section class="list-courses">
+                <article>
+                    <div class="course-title">
+                        <img src="assets/icons/internet-icon.png" alt="Ícone da rede mundial de computadores">
+                        <h3>Fundamentos da Internet e Web</h3>
+                    </div>
+                    <p>Conceitos, fundamento, principais tecnologias e segurança</p>
+                    <a href="#"><i data-lucide="arrow-right"></i></a>
+                </article>
+
+                <article>
+                    <div class="course-title">
+                        <img src="assets/icons/html-icon.png" alt="Ícone do HTML">
+                        <h3>HTML</h3>
+                    </div>
+                    <p>Estrutura, elementos e construção de páginas Web</p>
+                    <a href="#"><i data-lucide="arrow-right"></i></a>
+                </article>
+
+                <article>
+                    <div class="course-title">
+                        <img src="assets/icons/css-icon.png" alt="Ícone do CSS'">
+                        <h3>CSS</h3>
+                    </div>
+                    <p>Estilização, layout e responsividade</p>
+                    <a href="#"><i data-lucide="arrow-right"></i></a>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-title">
+            <i data-lucide="code-xml"></i>
+            <small>Internet, Web, HTML e CSS</small>
+        </div>
+
+        <div class="footer-legend">
+            <i data-lucide="graduation-cap"></i>
+            <small>Material Didático para ensino médio técnico</small>
+        </div>
+
+        <div class="social-links">
+            <a href=""><i data-lucide="git-graph"></i></a>
+            <a href=""><i data-lucide="store"></i></a>
+            <a href=""><i data-lucide=""></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
