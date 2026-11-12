@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #0B6B3A;
+  --color-secondary: #16A34A;
+
+  --color-green-light: #DCFCE7;
+  --color-green-soft: #F0FDF4;
+
+  --color-html: #F97316;
+  --color-css: #2563EB;
+
+  --color-text: #0F172A;
+  --color-text-secondary: #475569;
+
+  --color-background: #FFFFFF;
+  --color-border: #D6E9DE;
+
+  --font-primary: 'Inter', sans-serif;
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
