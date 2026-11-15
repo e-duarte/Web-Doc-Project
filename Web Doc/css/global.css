@@ -6,7 +6,11 @@
   --color-green-soft: #F0FDF4;
 
   --color-html: #F97316;
+  --color-html-light: #feeed7;
+  --color-html-soft: #fef6ee;  
   --color-css: #2563EB;
+  --color-css-light: #daeefe;
+  --color-css-soft: #f1f7fd;
 
   --color-text: #0F172A;
   --color-text-secondary: #475569;
@@ -26,5 +30,9 @@
 a{
   text-decoration: none;
   color: black;
+}
+
+main{
+    padding: 1rem 0;
 }
 

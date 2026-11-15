@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1647 240" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="waveBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F0FDF4" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#E5F8EC" stop-opacity="0.48"/>
+    </linearGradient>
+    <linearGradient id="waveMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E7F9ED" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#D8F6E2" stop-opacity="0.74"/>
+    </linearGradient>
+    <linearGradient id="waveFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DDF8E6" stop-opacity="0.76"/>
+      <stop offset="1" stop-color="#C9F2D7" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Back ribbon: long shallow crest, with a separate curved lower edge -->
+  <path d="M0 52
+    C105 86 185 143 286 151
+    C402 161 493 107 603 82
+    C713 56 796 82 906 119
+    C1032 162 1117 181 1235 142
+    C1372 97 1485 34 1647 8
+    L1647 91
+    C1504 112 1396 170 1260 194
+    C1134 217 1032 195 906 158
+    C794 125 713 102 610 126
+    C495 153 408 202 286 190
+    C174 179 91 126 0 101 Z" fill="url(#waveBack)"/>
+
+  <!-- Middle ribbon -->
+  <path d="M0 105
+    C105 139 190 188 302 194
+    C417 201 510 155 615 132
+    C724 108 805 127 916 161
+    C1037 198 1135 222 1250 187
+    C1390 144 1500 95 1647 75
+    L1647 151
+    C1505 172 1402 216 1265 231
+    C1138 246 1036 228 914 196
+    C800 166 722 147 620 170
+    C509 195 416 237 300 230
+    C184 222 100 175 0 151 Z" fill="url(#waveMid)"/>
+
+  <!-- Front ribbon, visible as a soft green lower sweep -->
+  <path d="M0 157
+    C116 188 204 218 317 222
+    C432 226 525 193 630 174
+    C740 154 819 171 930 198
+    C1050 228 1147 248 1262 220
+    C1400 187 1510 148 1647 137
+    L1647 204
+    C1510 216 1407 239 1270 249
+    C1144 258 1047 241 927 218
+    C817 197 740 181 635 198
+    C525 216 432 244 315 241
+    C202 237 112 207 0 190 Z" fill="url(#waveFront)"/>
+</svg>
