@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Web Docs - Fundamentos de Internet e Web</title>
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/web.css">
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
             <div class="logo-label">
-                <a href="index.html" id="logo" class="label">
+                <a href="../index.html" id="logo" class="label">
                     <i data-lucide="code-xml"></i>
                     Web Docs
                 </a>
@@ -19,19 +21,19 @@
 
             <ul class="main-nav">
                 <li>
-                    <a href="index.html" class="label checked">
+                    <a href="../index.html" class="label">
                         <i data-lucide="house"></i>
                         Início
                     </a>
                 </li>
                 <li>
-                    <a href="index.html" class="label">
+                    <a href="web.html" class="label checked">
                         <i data-lucide="book"></i>
                         Conteúdos
                     </a>
                 </li>
-                <li >
-                    <a href="index.html" class="label">
+                <li>
+                    <a href="../index.html" class="label">
                         <i data-lucide="user"></i>
                         Sobre o Autor
                     </a>
@@ -40,26 +42,33 @@
         </nav>
     </header>
 
-    <aside>
-        <!-- <nav class="aside-nav">
-            <h2>Conteúdos</h2>
-            <ul>
-                <li>
-                    Fundamentos de Internet e Web
+    <div class="content">
+        <aside class="aside-content">
+            <nav class="nav-learn">
+                <div class="nav-title label aside-nav-item item-selected">
+                    <i data-lucide="book"></i>
+                    <h2>Conteúdos</h2>
+                </div>
+                <div class="nav-web label aside-nav-item">
+                    <i data-lucide="globe"></i>
+                    <h3>Fundamentos de Internet e Web</h3>
+                </div>
+                <ul class="nav-web-list">
+                    <li>
+                        Fundamentos de Internet e Web
                     <li>
                         Visão Geral
                     </li>
                     <li>
                         O que é Internet?
                     </li>
-                </li>
-            </ul>
-        </nav> -->
-    </aside>
+                </ul>
+            </nav>
+        </aside>
 
-    <main>
-        Hello World
-    </main>
+        <main class="main-content">
+        </main>
+    </div>
 
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -67,4 +76,5 @@
         lucide.createIcons();
     </script>
 </body>
+
 </html>

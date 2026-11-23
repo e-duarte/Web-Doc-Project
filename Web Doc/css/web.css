@@ -1,11 +1,47 @@
-aside{
-    background-color: aquamarine;
-    width: 30vw;
-    height: 70vh;
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-main{
-    background-color: cornsilk;
-    width: 70vw;
-    height: 70vh;
+.content{
+    display: flex;
+    flex:1;
+}
+
+.aside-content{
+    width: 20vw;
+    padding: 1rem 1rem 1rem 4rem;
+    background-color: var(--color-green-soft);
+
+    .aside-nav-item{
+        padding: .5rem;
+    }
+
+    .nav-learn{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .nav-web-list{
+            list-style: none;
+            padding-left: 1.5rem;
+
+            li{
+                margin-bottom: .5rem;
+                font-size: 14px;
+                color: var(--color-text-secondary);
+            }
+        }
+    }
+
+    .item-selected{
+        background-color: var(--color-green-light);
+        border-radius: 5px;
+    }
+
+}
+
+.main-content{
+    width: 80vw;
 }
