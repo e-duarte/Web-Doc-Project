@@ -27,13 +27,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="web.html" class="label checked">
+                    <a href="web.html" class="label">
                         <i data-lucide="book"></i>
                         Conteúdos
                     </a>
                 </li>
                 <li>
-                    <a href="../index.html" class="label">
+                    <a href="author.html" class="label">
                         <i data-lucide="user"></i>
                         Sobre o Autor
                     </a>
@@ -43,26 +43,52 @@
     </header>
 
     <div class="content">
-        <aside class="aside-content">
+        <aside class="asidebar">
             <nav class="nav-learn">
-                <div class="nav-title label aside-nav-item item-selected">
-                    <i data-lucide="book"></i>
-                    <h2>Conteúdos</h2>
-                </div>
-                <div class="nav-web label aside-nav-item">
-                    <i data-lucide="globe"></i>
-                    <h3>Fundamentos de Internet e Web</h3>
-                </div>
-                <ul class="nav-web-list">
-                    <li>
-                        Fundamentos de Internet e Web
-                    <li>
-                        Visão Geral
-                    </li>
-                    <li>
-                        O que é Internet?
-                    </li>
-                </ul>
+                <details>
+                    <summary class="nav-topic aside-nav-item item-selected">
+                        <i data-lucide="book"></i>
+                        <span>Conteúdos</span>
+                    </summary>
+                    <details class="nav-web-group">
+                        <summary class="nav-web-item">
+                            <img src="../assets/icons/internet-icon.png" alt="Ícone da rede mundial de computadores">
+                            <span>Fundamentos de Internet e Web</span>
+                            <i data-lucide="chevron-down" class="chevron"></i>
+                        </summary>
+                        <ul class="web-submenu">
+                            <li><a href="#">Fundamentos de Internet e Web</a></li>
+                            <li><a href="#">Visão Geral</a></li>
+                            <li><a href="#">O que é Inernet</a></li>
+                        </ul>
+                    </details>
+
+                    <details class="nav-html-group">
+                        <summary class="nav-html-item">
+                            <img src="../assets/icons/html-icon.png" alt="Ícone da rede mundial de computadores">
+                            <span>HTML</span>
+                            <i data-lucide="chevron-down" class="chevron"></i>
+                        </summary>
+                        <ul class="html-submenu">
+                            <li><a href="#">Fundamentos de Internet e Web</a></li>
+                            <li><a href="#">Visão Geral</a></li>
+                            <li><a href="#">O que é Inernet</a></li>
+                        </ul>
+                    </details>
+
+                    <details class="nav-css-group">
+                        <summary class="nav-css-item">
+                            <img src="../assets/icons/css-icon.png" alt="Ícone da rede mundial de computadores">
+                            <span>Fundamentos de Internet e Web</span>
+                            <i data-lucide="chevron-down" class="chevron"></i>
+                        </summary>
+                        <ul class="css-submenu">
+                            <li><a href="#">Fundamentos de Internet e Web</a></li>
+                            <li><a href="#">Visão Geral</a></li>
+                            <li><a href="#">O que é Inernet</a></li>
+                        </ul>
+                    </details>
+                </details>
             </nav>
         </aside>
 
@@ -71,6 +97,7 @@
     </div>
 
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../scripts/script.js"></script>
 
     <script>
         lucide.createIcons();

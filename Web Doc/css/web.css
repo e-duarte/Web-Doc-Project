@@ -1,47 +1,98 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.content{
+.content {
     display: flex;
-    flex:1;
+    flex: 1;
 }
 
-.aside-content{
+.asidebar {
     width: 20vw;
     padding: 1rem 1rem 1rem 4rem;
     background-color: var(--color-green-soft);
+    border-right: 1px solid #e0e0e0;
 
-    .aside-nav-item{
+    .aside-nav-item {
         padding: .5rem;
     }
 
-    .nav-learn{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        .nav-web-list{
-            list-style: none;
-            padding-left: 1.5rem;
-
-            li{
-                margin-bottom: .5rem;
-                font-size: 14px;
-                color: var(--color-text-secondary);
-            }
-        }
-    }
-
-    .item-selected{
+    .item-selected {
         background-color: var(--color-green-light);
         border-radius: 5px;
     }
 
+    .nav-topic {
+        display: flex;
+        gap: 0.5rem;
+        cursor: pointer;
+
+        span {
+            font-weight: bold;
+        }
+
+
+    }
+
+    .nav-web-group {
+        padding: 12px 15px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .nav-web-group summary {
+        list-style: none;
+    }
+
+    .nav-web-group summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .chevron {
+        transition: transform 0.25s ease;
+    }
+
+    .nav-web-group[open] summary .chevron {
+        transform: rotate(180deg);
+    }
+
+    .nav-web-group summary img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-web-group summary {
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+    }
+
+    .web-submenu {
+        padding: 5px 0 5px 38px;
+        /* Alinhado com o texto acima */
+        margin: 0;
+    }
+
+    .web-submenu::marker{
+        color: var(--color-primary);
+    }
+
+    .web-submenu li a {
+        display: block;
+        padding: 8px 12px;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    .web-submenu li a:hover {
+        border-radius: 10px;
+        background-color: var(--color-green-light);
+    }
 }
 
-.main-content{
+.main-content {
     width: 80vw;
 }
